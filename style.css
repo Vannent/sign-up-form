@@ -17,24 +17,22 @@ body {
 
 .container {
     height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 0%;
     margin: 0%;
-    flex: 0;
-    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    gap: 30px;
+    flex: 1;
 }
 
 header {
-    min-width: 64vh;
-    max-width: 64vh;
-    width: 64vh;
-    background-color: #69EAB6;
+    width: 50vh;
     height: 100vh;
-    min-height: 10vh;
-    max-height: 100vh;
+    background-color: #69EAB6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +40,8 @@ header {
     justify-content: center;
     padding: 0px;
     margin: 0%;
+    position: relative;
+    flex: 1;
 }
 
 div.title {
@@ -70,7 +70,8 @@ main {
     min-height: 10vh;
     max-height: 80vh;
     padding: 0% 5%;
-    flex-shrink: 2;
+    flex-flow: column nowrap;
+    width: 100vh;
 }
 
 .break {
@@ -159,9 +160,8 @@ a:hover {
 }
 
 footer {
-    position: fixed;
     left: 55%;
-    bottom: 0%;
+    bottom: 0vh;
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
